@@ -1,0 +1,1588 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@600&display=swap" rel="stylesheet">
+
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Herr+Von+Muellerhoff&family=Nunito+Sans:opsz@6..12&family=Plus+Jakarta+Sans&family=Source+Code+Pro&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+    <style>
+        body {
+            /* background-color: rgb(255, 221, 0); */
+            background-color: black;
+            margin: 0;
+            cursor:url(/leg_piece-removebg-preview.png),auto;
+        }
+        nav {
+            position: absolute;
+            top: 0;
+            /* margin-top: -7px; */
+            /* padding-right: 8px; */
+            width: 100%;
+            height: 12vh;
+            font-family: 'Source Sans 3', sans-serif;
+            display: flex;
+            justify-content: space-evenly;
+            font-size: 80%;
+            transition: 0.3s ease-in-out;
+            color: rgb(255, 217, 0);
+            background-color: rgb(27, 22, 22);
+            z-index: 1;
+            font-size: 80%;
+
+        }
+        #fafa1{
+            position: absolute;
+            top: 23px;
+            right: 2px;
+            font-size: 20px;
+        }
+        #fafa2{
+            position: absolute;
+            top: 23px;
+            font-size: 20px;
+            right: 10px;
+        }
+        #menu_bar{
+            display: none;
+        }
+
+        nav:hover {
+            width: 100%;
+            color: rgb(255, 213, 0);
+            background-color: black;
+            
+        }
+
+        #logo{
+            position: absolute;
+            left: 2%;
+        }
+        #logo img{
+            height: 100px;
+        }
+
+        #nav_item {
+            display: flex;
+            gap: 10%;
+            position: absolute;
+            vertical-align: middle;
+        }
+
+        #nav_item h3 {
+            width: max-content;
+            position: relative;
+            top: 10px;
+            /* border: 1px solid black; */
+        }
+
+        #nav_item h3::after {
+            content: "";
+            position: absolute;
+            top: 23px;
+            height: 4px;
+            width: 100%;
+            left: 0;
+            background-color: rgb(215, 0, 0);
+            transition: 0.3s ease-in-out;
+            transform: scaleX(0);
+        }
+
+        #nav_item h3:hover::after {
+            transform: scaleX(1);
+            border-radius: 30px;
+        }
+
+        #nav_item h3:hover {
+            cursor: pointer;
+        }
+
+        #nav_item div {
+            display: flex;
+            gap: 10%;
+            right: 100px;
+            /* padding-top: 8%; */
+            /* top: 3px; */
+            /* top: 100px; */
+
+        }
+        #gal{
+            position: absolute;
+            left: 450px;
+            
+        }
+        #gal1{
+            position: absolute;
+            left: 570px;
+        }
+
+        #nav_item h3 {
+            /* width: 90%; */
+            padding: 1% 5% 0% 5%;
+
+        }
+        
+
+        /* NAVIGATION OVER */
+
+
+
+        /* SECTION1 */
+
+        section {
+            font-family: 'Source Code Pro', monospace;
+            font-size: 25px;
+            color: rgb(255, 213, 0);
+            width: 100%;
+        }
+        
+        #sec11 img{
+            width: 100%;
+            height: 600px;
+        }
+
+        #sec12 {
+            position: absolute;
+            font-family: 'Source Code Pro', monospace;
+            /* bottom: 20%; */
+            top: 20%;
+            left: 40%;
+            font-size: 200%;
+        }
+
+        #f1 {
+            color: rgb(255, 213, 0);
+            transition: 0.3s;
+        }
+
+        #f1:hover {
+            cursor: context-menu;
+            color: red;
+        }
+
+        #herr {
+            font-family: 'Herr Von Muellerhoff', cursive;
+            position: absolute;
+            width: 100%;
+            font-size: 200%;
+            left: 100px;
+            rotate: -5deg;
+            color: red;
+            top: 100px;
+            transition: 0.3s;
+        }
+
+        #herr:hover {
+            cursor: context-menu;
+            color: rgb(255, 213, 0);
+        }
+
+        /* SECTION 1 OVER */
+
+
+        /* SECTION 2 COROUSEL */
+
+        #adj1{
+            position: relative;
+            left: 200px;
+        }
+        #adj2{
+            position: relative;
+            left: 200px;
+        }
+        #adj3{
+            position: relative;
+            left: 200px;
+        }
+        #adj4{
+            position: relative;
+            left: 200px;
+        }
+        #cor_img1{
+            width: 70%;
+            height: 500px;
+            opacity: 0.7;
+        }
+        #cor_img2{
+            width: 70%;
+            height: 500px;
+            opacity: 0.7;
+        }
+        #cor_img3{
+            width: 70%;
+            height: 500px;
+            opacity: 0.7;
+        }
+        #cor_img4{
+            width: 70%;
+            height: 500px;
+            opacity: 0.7;
+        }
+        #cor_mc1{
+            position: absolute;
+            bottom: 300px;
+            left: 100px;
+            font-size: 60px;
+            background-color: rgba(0, 0, 0, 0.84);
+            padding: 10px;
+            border-top-right-radius: 50px;
+            border-bottom-left-radius: 50px;
+        }
+        #cor_sc1{
+            position: absolute;
+            bottom: 75px;
+            left: 100px;
+            font-family: 'Herr Von Muellerhoff', cursive;
+            font-size: 500%;
+            rotate: -10deg;
+            color: red;
+        }
+        #cor_bt1{
+            position: absolute;
+            bottom: 75px;
+            left: 200px;
+            font-size: 150%;
+            padding: 10px;
+            border-radius: 10px;
+            background-color: rgb(255, 213, 0);
+            color: black;
+            transition: 0.5s;
+        }
+        #cor_bt1:hover{
+            background-color: black;
+            color: rgb(255, 213, 0);
+            cursor: pointer;
+        }
+        #cor_mc2{
+            position: absolute;
+            bottom: 300px;
+            left: 100px;
+            font-size: 60px;
+            background-color: rgba(0, 0, 0, 0.84);
+            padding: 10px;
+            border-top-right-radius: 50px;
+            border-bottom-left-radius: 50px;
+        }
+        #cor_sc2{
+            position: absolute;
+            bottom: 75px;
+            left: 100px;
+            font-family: 'Herr Von Muellerhoff', cursive;
+            font-size: 500%;
+            rotate: -10deg;
+            color: red;
+        }
+        #cor_bt2{
+            position: absolute;
+            bottom: 75px;
+            left: 200px;
+            font-size: 150%;
+            padding: 10px;
+            border-radius: 10px;
+            background-color: rgb(255, 213, 0);
+            color: black;
+            transition: 0.5s;
+        }
+        #cor_bt2:hover{
+            background-color: black;
+            color: rgb(255, 213, 0);
+            cursor: pointer;
+        }
+        #cor_mc3{
+            position: absolute;
+            bottom: 300px;
+            left: 100px;
+            font-size: 60px;
+            background-color: rgba(0, 0, 0, 0.84);
+            padding: 10px;
+            border-top-right-radius: 50px;
+            border-bottom-left-radius: 50px;
+        }
+        #cor_sc3{
+            position: absolute;
+            bottom: 75px;
+            left: 100px;
+            font-family: 'Herr Von Muellerhoff', cursive;
+            font-size: 500%;
+            rotate: -10deg;
+            color: red;
+        }
+        #cor_bt3{
+            position: absolute;
+            bottom: 75px;
+            left: 200px;
+            font-size: 150%;
+            padding: 10px;
+            border-radius: 10px;
+            background-color: rgb(255, 213, 0);
+            color: black;
+            transition: 0.5s;
+        }
+        #cor_bt3:hover{
+            background-color: black;
+            color: rgb(255, 213, 0);
+            cursor: pointer;
+        }
+        #cor_mc4{
+            position: absolute;
+            bottom: 300px;
+            left: 350px;
+            font-size: 60px;
+            background-color: rgba(0, 0, 0, 0.84);
+            padding: 10px;
+            border-top-right-radius: 50px;
+            border-bottom-left-radius: 50px;
+        }
+        #cor_sc4{
+            position: absolute;
+            bottom: 75px;
+            left: 350px;
+            font-family: 'Herr Von Muellerhoff', cursive;
+            font-size: 500%;
+            rotate: -10deg;
+            color: red;
+        }
+        #cor_bt4{
+            position: absolute;
+            bottom: 75px;
+            left: 600px;
+            font-size: 150%;
+            padding: 10px;
+            border-radius: 10px;
+            background-color: rgb(255, 213, 0);
+            color: black;
+            transition: 0.5s;
+        }
+        #cor_bt4:hover{
+            background-color: black;
+            color: rgb(255, 213, 0);
+            cursor: pointer;
+        }
+
+        /* SECTION 2 CORUSEL OVER */
+
+        /* SECTION 3 */
+
+        #sec_anime {
+            display: flex;
+            position: absolute;
+            left: 250px;
+            font-size: 30px;
+            gap: 2px;
+        }
+        #sec_anime img{
+            height: 600px;
+            width: 500px;
+        }
+
+        #fade1 {
+            position: absolute;
+            top: 0px;
+            height: 540px;
+            width: 500px;
+            padding-top: 60px;
+            font-size: 40px;
+            transition: 0.5s;
+            z-index: 2;
+            color: rgba(255, 213, 0, 0);
+        }
+        #fade1:hover{
+            color: rgb(255, 213, 0);
+            background-color: rgba(0, 0, 0, 0.774);
+        }
+        #fade1 li {
+            list-style-type: none;
+            font-family: 'Herr Von Muellerhoff', cursive;
+        }
+
+        #fade2 {
+            position: absolute;
+            top: 0;
+            right: 0;
+            transition: 0.5s;
+            padding-left: 80px;
+            padding-top: 80px;
+            height: 520px;
+            font-size: 40px;
+            color: rgba(255, 213, 0, 0);
+        }
+        #fade2:hover{
+            color: rgb(255, 213, 0);
+            background-color: rgba(0, 0, 0, 0.774);
+        }
+        #fade2 li {
+            list-style-type: none;
+            font-family: 'Herr Von Muellerhoff', cursive;
+        }
+
+        /* SECTION 3 OVER */
+
+
+        /* SECTION4 */
+
+        #card1 {
+            display: flex;
+            position: absolute;
+            justify-content: space-between;
+            left: 100px;
+            gap: 100px;
+        }
+        #card1 p {
+            position: absolute;
+            top: 50px;
+            font-size: 60%;
+        }
+        #card1 h3 {
+            position: absolute;
+            bottom: 10px;
+            color: rgb(255, 213, 0);
+            background-color: black;
+            padding: 5px;
+            border-radius: 10px;
+        }
+        #card1 img {
+            opacity: 0.5;
+            border-radius: 30px;
+        }
+
+        #cc1{
+            height: 250px;
+            width: 250px;
+            transition: 0.5s;
+            border-radius: 30px;
+        }
+        #cc1 img{
+            height: 250px;
+            width: 250px;
+            transition: 0.5s;
+        }
+        /* #cc1 img:hover{
+            height: 300px;
+            width: 300px;
+        } */
+        
+        #cc1:hover{
+            box-shadow: 0 0 30px 0;
+        }
+        
+
+
+        #cc2{
+            height: 250px;
+            width: 250px;
+            transition: 0.5s;
+            border-radius: 30px;
+        }
+        #cc2 img{
+            height: 250px;
+            width: 250px;
+            transition: 0.5s;
+        }
+        /* #cc2 img:hover{
+            height: 300px;
+            width: 300px;
+            transition: 0.5s;
+        } */
+        #cc2:hover{
+            box-shadow: 0 0 30px 0;
+        }
+        
+
+        #cc3{
+            height: 250px;
+            width: 250px;
+            transition: 0.5s;
+
+            border-radius: 30px;
+        }
+        #cc3 img{
+            height: 250px;
+            width: 250px;
+            transition: 0.5s;
+        }
+        /* #cc3 img:hover{
+            height: 300px;
+            width: 300px;
+            transition: 0.5s;
+        } */
+        #cc3:hover{
+            box-shadow: 0 0 30px 0;
+        }
+
+        #cc4{
+            height: 250px;
+            width: 250px;
+            transition: 0.5s;
+            border-radius: 30px;
+        }
+        #cc4 img{
+            height: 250px;
+            width: 250px;
+            transition: 0.5s;
+        }
+        /* #cc4 img:hover{
+            height: 300px;
+            width: 300px;
+            transition: 0.5s;
+        } */
+        #cc4:hover{
+            box-shadow: 0 0 30px 0;
+        }
+
+
+        /* SECTION 4 OVER */
+
+        /* SECTION 5 */
+
+        /* .sh1{
+            
+            text-shadow: 10px 10px 20px black;
+        }
+        #menu{
+            display: flex;
+            justify-content: space-evenly;
+        } */
+        #map{
+            display: flex;
+            margin-left: 50px;
+            margin-right: 50px;
+        }
+        #m1{
+            display: flex;
+            gap: 30px;
+            position: absolute;
+            bottom: 75px;
+            left: 70px;
+        }
+        #map2{
+            position: relative;
+            bottom: 100px;
+        }
+        #map2 h3{
+            position: relative;
+            font-family: 'Herr Von Muellerhoff', cursive;
+            font-size: 100px;
+            color: red;
+            left: 100px;
+        }
+        #m1 h3{
+            position: absolute;
+            bottom: 80px;
+            left: 200px;
+            font-family: 'Source Sans 3', sans-serif;    
+            color: rgb(255, 213, 0);
+            font-size: 50px;
+        }
+        #m1 p{
+            position: absolute;
+            bottom: 80px;
+            left: 150px;
+            font-size: 50px;
+        }
+        #m2 p{
+            position: absolute;
+            left: 200px;
+            width: 600px;
+        }
+        #g_map_img{
+            display: none;
+        }
+        /* SECTION 5 OVER */
+        #food{
+            display: flex;
+            /* justify-content: space-evenly; */
+        }
+        #f_id1 img{
+            position: relative;
+            height: 300px;
+            left: 270px;
+            border-radius: 20px;
+            box-shadow: 0 0 20px 0 rgb(255, 213, 0);
+        }
+        #f_id2 img{
+            position: relative;
+            height: 300px;
+            left: 120px;
+            border-radius: 20px;
+            box-shadow: 0 0 20px 0 rgb(255, 213, 0);
+        }
+        #dosa img{
+            position: relative;
+            height: 600px;
+            right: 30px;
+            border-radius: 20px;
+            box-shadow: 0 0 20px 0 rgb(255, 213, 0);
+        }
+        #f_dis{
+            position: absolute;
+            left: 50px;
+            font-family: 'Herr Von Muellerhoff', cursive;
+            color: red;
+            font-size: 100px;
+        }
+        #f_menu{
+            position: relative;
+            left: 200px;
+            top: 130px;
+            font-size: 75px;
+        }
+        #f_p{
+            position: relative;
+            top: 50px;
+            left: 100px;
+            width: 450px;
+        }
+        #v_nv{
+            display: flex;
+            justify-content: space-around;
+        }
+        #veg img{
+            height: 300px;
+            border-radius: 30px;
+            opacity: 0.7;
+        }
+        #veg h3{
+            position: relative;
+            background-color:rgb(255, 213, 0);
+            color: black;
+            bottom: 90px;
+            left: 20px;
+            width: 75px;
+            padding: 5px;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        #non_veg img{
+            height: 300px;
+            border-radius: 30px;
+            opacity: 0.7;
+        }
+        #non_veg h3{
+            position: relative;
+            background-color:rgb(255, 213, 0);
+            color: black;
+            bottom: 90px;
+            left: 20px;
+            width: 150px;
+            padding: 5px;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        
+
+        /*  */
+
+        #footer{
+            background-color: #2f2f2f;
+            position: relative;
+            top: 50px;
+            height: 63vh;
+            background: linear-gradient(to top , transparent ,#2f2f2f);
+            font-size: 20px;
+        }
+        #pol{
+            position: relative;
+            top: 50px;
+            font-family: 'Source Sans 3', sans-serif;
+            color: #D3D3D3;
+            display: flex;
+            justify-content: space-evenly;
+            /* text-decoration: underline; */
+            cursor: pointer;
+        }
+        #contact{
+            position: relative;
+            display: flex;
+            justify-content: space-around;
+            top: 100px;
+            font-family: 'Source Sans 3', sans-serif;
+        }
+        #contact p{
+            position: relative;
+            background-color: #D3D3D3;
+            color:#b70025;
+            text-align: center;
+            font-size: 30px;
+            padding: 5px;
+            align-items: center;
+            width: 50px;
+            border-radius: 50% ;
+            left: 20px;
+        }
+        #contact h3{
+            color:#DC143C;
+        }
+        .list1 ul li{
+            position: relative;
+            list-style: none;
+            margin-top: 20px;
+            text-decoration: none;
+            font-size: 15px;
+            left: -30px;
+        }
+        .list1 p{
+            position: relative;
+            background-color: #b70025;
+            text-align: center;
+            padding: 2px;
+            right: 10px;
+            border-radius: 10px;
+        }
+        
+
+
+
+        @media screen and ((max-width:400px) and (min-width:320px)) {
+            body{
+                background-color: black;
+                margin: 0;
+            }
+            nav{
+                width: 100%;
+            }
+            #nav_item{
+                display: none;
+                top: 10px;
+                left: 0;
+                padding-left: 10px;
+                padding-right: 0;
+                width: 200px;
+                height: 300px;
+                /* border: 2px solid; */
+                border-radius: 30px;
+                background-color: black;
+                /* box-shadow: 0px 25px 50px 50px black; */
+
+                /* text-align: center; */
+            }
+            #nav_item h3{
+                text-align: center;
+            }
+            #nav_item h3::after{
+                /* transform: scale(1); */
+                top: 20px;
+            }
+            #logo{
+                height: 20px;
+                left: 5%;
+            }
+            #logo img{
+                height: 75px;
+            }
+            #menu_bar{
+                display: inline;
+                position: absolute;
+                top: 30px;
+                left: 80%;
+                font-size: 20px;
+            }
+            #gal{
+                left: 17px;
+                top: 190px;
+            }
+            #gal1{
+                left: 15px;
+                top: 230px;
+            }
+            #fafa1{
+                display: none;
+            }
+            #fafa2{
+                left: 85px;
+            }
+            /* NAV OVER */
+
+            /* SECTION 1 */
+
+            #sec11 img{
+                margin: 0;
+                width: 100%;
+            }
+            /* #sec12{
+                font-size: 25px;
+                left: 100px;
+                top: 100px;
+            } */
+            #herr{
+                /* right: 0; */
+                left: 0px;
+            }
+            #herr{
+                position: absolute;
+                color: red;
+                left: 150px;
+                top:50px;
+                width: 200px;
+                font-size: 200%;
+            }
+            #sec12{
+                top: 30%;
+                font-size: 100%;
+                left: 0;
+            }
+            #f1{
+                position: absolute;
+                left: 100px;
+                top: -50px;
+            }
+
+            /* SECTION 1 OVER */
+
+            /* SECTION 2 COROUSEL */
+
+            #adj1 img{
+                position: relative;
+                height: 400px;
+                left: 40px;
+                width: 200px;
+                
+                
+            }
+            #adj2 img{
+                position: relative;
+                height: 400px;
+                left: 40px;
+                width: 200px;
+                
+            }
+            #adj3 img{
+                position: relative;
+                height: 400px;
+                left: 40px;
+                width: 200px;
+                
+            }
+            #adj4 img{
+                position: relative;
+                height: 400px;
+                left: 40px;
+                width: 200px;
+                
+            }
+            #cor_mc1{
+                position: absolute;
+                left: 40px;
+                font-size: 100%;
+                
+            }
+            #cor_sc1{
+                position: absolute;
+                left: 40px;
+                font-size: 10%;
+                height: 10px;
+                top: 0;
+            }
+            #cor_bt1{
+                left: 50px;
+                position: absolute;
+                font-size: 50%;
+            }
+
+            #cor_mc1{
+                position: absolute;
+                left: 40px;
+                font-size: 100%;
+                
+            }
+            #cor_sc1{
+                position: absolute;
+                left: 40px;
+                font-size: 300%;
+            }
+            #cor_bt1{
+                left: 50px;
+                position: absolute;
+                font-size: 50%;
+            }
+
+            #cor_mc2{
+                position: absolute;
+                left: 40px;
+                font-size: 100%;
+                
+            }
+            #cor_sc2{
+                position: absolute;
+                left: 40px;
+                font-size: 300%;
+            }
+            #cor_bt2{
+                left: 50px;
+                position: absolute;
+                font-size: 50%;
+            }
+
+            #cor_mc3{
+                position: absolute;
+                left: 40px;
+                font-size: 100%;
+                
+            }
+            #cor_sc3{
+                position: absolute;
+                left: 40px;
+                font-size: 300%;
+            }
+            #cor_bt3{
+                left: 50px;
+                position: absolute;
+                font-size: 50%;
+            }
+            
+            #cor_mc4{
+                position: absolute;
+                left: 40px;
+                font-size: 100%;
+                
+            }
+            #cor_sc4{
+                position: absolute;
+                left: 40px;
+                font-size: 300%;
+            }
+            #cor_bt4{
+                left: 50px;
+                position: absolute;
+                font-size: 50%;
+            }
+            
+            /* SECTION 2 OVER */
+
+            /* SECTION 3 */
+            #sec_anime{
+                position: absolute;
+                left: 0px;
+                /* width: 90%; */
+                overflow: hidden;
+            }
+            #sec_anime img{
+                height: 400px;
+                width: 190px;
+            }
+            #fade1{
+                height: 340px;
+                width: 190px;
+                font-size: 100%;
+                overflow: hidden;
+            }
+            #fade2{
+                height: 320px;
+                width: 110px;
+                overflow: hidden;
+                /* left: 0; */
+                
+                font-size: 100%; 
+            }
+            #fade2 h3{
+                position: absolute;
+                right: 0px;
+                left: 0;
+                top: 50px;
+            }
+            #fade2 ul{
+                position: absolute;
+                left: 0;
+                top: 190px;
+                /* width: 160px; */
+            }
+
+            /* SECTION 3 OVER */
+
+            /* SECTION 4 */
+            #card1{
+                width: 2px;
+                
+            }
+            #cc1{
+                position: absolute;
+                left: -100px;
+                /* top: 0; */
+                bottom: 200px;
+                height: 150px;
+                width: 300px;
+            }
+            #cc1 img{
+                height: 150px;
+                width: 300px;
+            }
+            #cc1 p{
+                position: absolute;
+                font-size: 50%;
+                top: 20px;
+                left: 10px;
+                
+            }
+            #cc1 h3{
+                position: absolute;
+                font-size: 100%;
+                right: 0;
+                bottom: 0px;
+            }
+            #cc2{
+                position: absolute;
+                left: -100px;
+                bottom: -20px;
+                height: 200px;
+                width: 300px;
+            }
+            #cc2 img{
+                height: 150px;
+                width: 300px;
+            }
+            #cc2 p{
+                position: absolute;
+                font-size: 50%;
+                top: 20px;
+                left: 10px;
+                
+            }
+            #cc2 h3{
+                position: absolute;
+                font-size: 100%;
+                right: -10px;
+                bottom: 50px;
+            }
+            #cc3{
+                position: absolute;
+                left: -100px;
+                bottom: -150px;
+                height: 150px;
+                width: 300px;
+            }
+            #cc3 img{
+                height: 150px;
+                width: 300px;
+            }
+            #cc3 p{
+                position: absolute;
+                font-size: 50%;
+                top: 20px;
+                left: 10px;
+                
+            }
+            #cc3 h3{
+                position: absolute;
+                font-size: 100%;
+                right: 0px;
+                bottom: 0;
+            }
+            #cc4{
+                position: absolute;
+                left: -100px;
+                bottom: -350px;
+                height: 150px;
+                width: 300px;
+            }
+            #cc4 img{
+                height: 150px;
+                width: 300px;
+            }
+            #cc4 p{
+                position: absolute;
+                font-size: 50%;
+                top: 20px;
+                left: 10px;
+                
+            }
+            #cc4 h3{
+                position: absolute;
+                font-size: 100%;
+                right: 0;
+                bottom: 0;
+            }
+            
+            /* SECTION 4 OVER */
+
+            /* SECTION 5 */
+            #map{
+                margin: 0;
+            }
+            #map #g_map{
+                display: none;
+            }
+            #map2{
+                position: relative;
+                left: -100px;
+                bottom: 0;
+                font-size: 15px;
+                top: 110px;
+            }
+            #map h3{
+                font-size: 50px;
+            }
+            #m1 h3{
+                left: 50px;
+                top: -20px;
+                font-size: 50px;
+            }
+            #m1 p{
+                top: -20px;
+                left: 250px;
+                font-size: 50px;
+            }
+            #m2 p{
+                top: 200px;
+                left: 150px;
+                width: 300px;
+            }
+            #g_map_img{
+                display: inline;
+            }
+            #g_map_img img{
+                position: relative;
+                width: 100%;
+                bottom: 200px;
+            }
+
+
+
+            /*  */
+            #food{
+                width: 100%;
+                overflow: hidden;
+                display: block;
+            }
+            #f_dis{
+                top: 3150px;
+                font-size: 75px;
+            }
+            #f_menu{
+                font-size: 60px;
+                top: 90px;
+            }
+            #f_p{
+                left: 0;
+                font-size: 20px;
+                width: 350px;
+            }
+            #f_id1 img{
+                left: 0;
+            }
+            #f_id1 img{
+                top: 100px;
+                height: 150px;
+            }
+            #f_id2 img{
+                top: 100px;
+                left: 5px;
+                height: 150px;
+            }
+            #dosa img{
+                top: -210px;
+                height: 300px;
+                left: 230px;
+            }
+            #veg img{
+                height: 200px;
+            }
+            #veg h3{
+                width: 50px;
+                font-size: 20px;
+            }
+            #non_veg img{
+                height: 200px;
+            }
+            #non_veg h3{
+                width: 100px;
+                font-size: 20px;
+            }
+            #sp1{
+                display: none;
+            }
+            #line2{
+                position: relative;
+                bottom: 50px;
+            }
+
+            /*  */
+            #footer{
+                position: relative;
+                /* top: 700px; */
+                background-color: #3f3f3f;
+                height: 350px;
+                font-size: 15px;
+            }
+            .list1 ul{
+                display: none;
+            }
+            .list1 p{
+                background-color: rgba(0, 0, 0, 0);
+                text-decoration: underline;
+            }
+
+
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <nav>
+
+        <div id="logo">
+            <img src="hotel/biryani-logo.png" alt="">
+        </div>
+        <div id="nav_item">
+            <h3>HOME</h3>
+            <h3>ABOUT</h3>
+            <h3>MENU</h3>
+            <h3>ORDER</h3>
+            <h3>OUTLET</h3>
+            <div id="gal">
+                <h3>GALERY</h3>
+                <p><i class="fa fa-angle-down" id="fafa1"></i></p>
+            </div>
+            <div id="gal1">
+                <h3>WHATSAPP</h3>
+                <p><i class="fa fa-whatsapp" id="fafa2"></i></p>
+            </div>
+        </div>
+        <div id="menu_bar">
+            <i class="fa fa-bars" aria-hidden="true" onclick="menu()"></i>
+        </div>
+    </nav>
+
+
+    
+
+    <section data-aos="fade-down">
+        <div id="sec11">
+            <img src="hotel/b111edfe5c2376e01ee1a570ddcdbbbe.jpg" alt="">
+        </div>
+        <div id="sec12">
+            <h1 id="f1" class="text-wrapper">Aps Restaurant</h1>
+            <h1 id="herr">Multi cusine restaurant</h1>
+        </div>
+    </section>
+
+    <div style="height: 120px;"></div>
+
+    <section data-aos="slide-up" data-aos-duration="1000" id="cor">
+        <div class="splide">
+            <div class="splide__track">
+                <div class="splide__list">
+                    <div class="splide__slide">
+                        <div class="img_box">
+                            <div id="adj1">
+                                <img src="hotel/c1.jpg" alt="" id="cor_img1">
+                                <h3 id="cor_mc1">briyani</h3>
+                                <h3 id="cor_sc1">
+                                    Flavoured spices</h3>
+                                <h3 id="cor_bt1">
+                                    Buy-now</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="splide__slide">
+                        <div class="img_box">
+                            <div id="adj2">
+                                <img src="hotel/c2.jpg" alt="" id="cor_img2">
+                                <h3 id="cor_mc2">Fresh Meat</h3>
+                                <h3 id="cor_sc2">
+                                    Healthy</h3>
+                                <h3 id="cor_bt2">
+                                    view-more</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="splide__slide">
+                        <div class="img_box">
+                            <div id="adj3">
+                                <img src="hotel/c3.jpg" alt="" id="cor_img3">
+                                <h3 id="cor_mc3">
+                                    Chinese cusine</h3>
+                                <h3 id="cor_sc3">
+                                    Tastee...</h3>
+                                <h3 id="cor_bt3">
+                                    Explore</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="splide__slide">
+                        <div class="img_box">
+                            <div id="adj4">
+                                <img src="hotel/c4.jpg" alt="" id="cor_img4">
+                                <h3 id="cor_mc4">North-Indian
+                                </h3>
+                                <h3 id="cor_sc4">
+                                    Savorous</h3>
+                                <h3 id="cor_bt4">
+                                    place-order</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <script>
+        var splide = new Splide('.splide', {
+            type: 'loop',
+            padding: '5rem',
+        });
+
+        splide.mount();
+    </script>
+    </section>
+
+    <div style="height: 200px;"></div>
+
+    <section id="sec3">
+        <div id="sec_anime">
+            <div id="a1">
+                <img src="hotel/anime_img - Copy.jpg" alt="" data-aos="fade-down-right" data-aos-duration="1000" id="anime_img1">
+                <div id="fade1">
+                    <h3 data-aos="fade-right" data-aos-duration="2000" id="bri1">Briyani Menu</h3>
+                    <ul>
+                        <li>Chicken Briyani</li>
+                        <li>Mutton Briyani</li>
+                        <li>Mandi Briyani</li>
+                        <li>Fish Briyani</li>
+                    </ul>
+                </div>
+            </div>
+            <div id="a2">
+                <img src="hotel/anime_img.jpg" alt="" data-aos="fade-down-left" data-aos-duration="1000" id="anime_img2">
+                <div id="fade2">
+                    <h3 data-aos="fade-left" data-aos-duration="2000" id="bri2">Different style</h3>
+                    <ul>
+                        <li>Andra style</li>
+                        <li>Kerala style</li>
+                        <li>Chennai Style</li>
+                        <li>Banglure Style</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div style="height: 850px;" id="space"></div>
+
+    <section>
+        <div id="card1">
+            <div data-aos="fade-up" data-aos-duration="1000" id="cc1" class="shade">
+                <a href=""><img src="hotel/card1.jpg" alt="" class="cc_img"></a>
+                <p class="sh1">A tangy and flavorful rice dish made with tamarind, spices, and often
+                    garnished with peanuts.</p>
+                <a href="">
+                    <h3>Indian</h3>
+                </a>
+            </div>
+
+            <div  data-aos="fade-left" data-aos-easing="linear" data-aos-duration="1500"
+                id="cc2" class="shade">
+                <a href="">
+                    <img src="hotel/card2.jpg" alt="" class="cc_img"></a>
+                <p class="sh1">Cooked rice stir-fried with various ingredients such as vegetables, eggs,
+                    and meat.</p>
+                <a href="">
+                    <h3>Chinese</h3>
+                </a>
+
+            </div>
+            <div data-aos="fade-right" data-aos-easing="linear" data-aos-duration="1500"
+                id="cc3" class="shade">
+                <a href="">
+                    <img src="hotel/card3.jpg" alt="" class="cc_img"></a>
+                <p class="sh1"> Chicken cooked on a barbecue grill, usually marinated and basted with
+                    barbecue sauce.</p>
+                <a href="">
+                    <h3>BBQ</h3>
+                </a>
+
+            </div>
+            <div data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500"
+                id="cc4" class="shade">
+                <a href="">
+                    <img src="hotel/card4.jpg" alt="" class="cc_img"></a>
+                <p class="sh1">Casual food encompasses a diverse range of easy-to-prepare
+                    dishes, perfect informal dining experience.</p>
+                <a href="">
+                    <h3>Casual food</h3>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <div style="height: 400px;"></div>
+
+    <div style="width: 100%; color: rgb(255, 213, 0); border: 1px solid;" id="line"></div>
+
+    <div style="height: 100px;"></div>
+
+    <section>
+        <div id="map">
+            <div id="g_map" class="mapouter"><div class="gmap_canvas"><iframe width="600" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=hotel%20nila%20soru%20,salem&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://embedgooglemap.net/124/"></a><br><style>.mapouter{position:relative;text-align:right;height:500px;width:600px;}</style><a href="https://www.embedgooglemap.net">embed google maps</a><style>.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:600px;}</style></div></div>
+            <div id="map2">
+                <h3>Discover</h3>
+                <div id="m1">
+                    <p><i class="fa fa-map-marker" aria-hidden="true"></i></p>
+                    <h3>Location</h3>
+                </div>
+                <div id="m2">
+                    <p id="mp">We promise an intimate and relaxed dining experience that offers something different to local and foreign patrons and ensures you enjoy a memorable food experience every time.</p>
+                </div>
+            </div>
+        </div>
+        <i id="g_map_img"><img src="hotel/g_map.png" alt=""></i>
+    </section>
+
+    <div style="height: 150px;"></div>
+
+    <section>
+        <div id="food">
+            <div>
+                <h3 id="f_dis">Discover</h3>
+                <h3 id="f_menu">Menu</h3>
+                <p id="f_p">For those with pure food indulgence in mind, come next door and sate your desires with our ever changing internationally and seasonally inspired small plates.  We love food, lots of different food, just like you.</p>
+            </div>
+            <div>
+                <div id="f_id1">
+                    <img src="/hotel/d74e9da9caf10627fd007b996862737d.jpg">
+                    <img src="hotel/0c34ee192b723009fa669e274d9d0f04.jpg">
+                </div>
+            </div>
+            <div>
+                <div id="f_id2">
+                    <img src="hotel/1a5c6164bf80a5db76c6dca065a1b3d3.jpg">
+                    <img src="hotel/59c08ca05e322f369197e7ba623ee28e.jpg">
+                </div>
+            </div>
+                <div id="dosa">
+                    <img src="hotel/d0c8b00fc8451f87f9a667ee0d74d0cc.jpg">
+                </div>
+        </div>
+    </section>
+
+
+    <div style="height: 100px;" id="sp1"></div>
+    <div style="width: 100%; color: rgb(255, 213, 0); border: 1px solid;" id="line2"></div>
+    <div style="height: 100px;"></div>
+    
+
+    <section>
+        <div id="v_nv">
+            <div id="veg">
+                <a href="/veg.html">
+                    <img src="hotel/60dfcd8096cd9a40c150f2313075d0f5.jpg" alt="">
+                </a>
+                    <h3>veg</h3>
+            </div>
+            <div id="non_veg">
+                <a href="/non-veg.html">
+                    <img src="hotel/a484a4ad140d00070bb9f02c3b61e83c.jpg" alt="">
+                </a>
+                    <h3>Non-Veg</h3>
+            </div>
+        </div>
+    </section>
+
+    
+    <section>
+        <div id="footer">
+            <div id="pol">
+                <div class="list1">
+                    <p>Privacy policy</p>
+                    <ul>
+                        <li>All Rights Reserved</li>
+                        <li>Privacy Policy</li>
+                        <li>Terms of Service</li>
+                        <li>Contact Us</li>
+                        <li>Cookie Policy</li>
+                    </ul>
+                </div>
+                <div class="list1">
+                    <p>Settings</p>
+                    <ul>
+                        <li>Email</li>
+                        <li>General</li>
+                        <li>Manage</li>
+                        <li>Backup</li>
+                        <li>Information</li>
+                    </ul>
+                </div>
+                <div class="list1">
+                    <p>Nearby</p>
+                    <ul>
+                        <li>Locations</li>
+                        <li>Places</li>
+                        <li>Maps</li>
+                        <li>Stores</li>
+                        <li>Restaurants</li>
+                    </ul>
+                </div>
+                <div class="list1">
+                    <p>Review</p>
+                    <ul>
+                        <li>Ratings</li>
+                        <li>Comments</li>
+                        <li>Feedback</li>
+                        <li>Suggestions</li>
+                        <li>Testimonials</li>
+                    </ul>
+                </div>
+            </div>
+            <div id="contact">
+                <div>
+                    <p id="f_book"><i class="fa fa-facebook-f"></i></p>
+                    <h3>FACEBOOK</h3>
+                </div>
+                <div>
+                    <p id="insta"><i class="fa fa-instagram" aria-hidden="true"></i></p>
+                    <h3>INSTAGRAM</h3>
+                </div>
+                <div>
+                    <p id="whatsapp"><i class="fa fa-whatsapp"></i></p>
+                    <h3>WHATSAPP</h3>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    
+
+
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            AOS.init();
+        });
+
+        m=0
+        function menu(){
+            m++
+            if(m%2!=0){
+                document.getElementById('nav_item').style.display='inline';
+
+                document.getElementById('menu_item').innerHTML='f'
+            }
+            else{
+                document.getElementById('nav_item').style.display='none';
+            }
+        }
+        
+        
+    </script>
+
+
+
+
+
+
+</body>
+
+</html>
